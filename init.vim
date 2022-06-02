@@ -12,9 +12,9 @@ set nocompatible
 
 call plug#begin()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vimwiki 						"
+" Git    						"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'vimwiki/vimwiki'					" vimwiki 
+Plug 'tpope/vim-fugitive'			        " git
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Golang 						"
@@ -30,6 +30,11 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " brew install fd
 " brew install ripgrep
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vimwiki 						"
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'vimwiki/vimwiki'					" vimwiki 
 
 call plug#end()
 
