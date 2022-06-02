@@ -4,6 +4,7 @@ syntax on						" syntax highlighting
 
 set encoding=utf-8					" utf-8
 set number						" add line numbers
+set relativenumber					" enabled relative line numbers
 set clipboard=unnamedplus   				" using system clipboard
 set ignorecase						" case insensitive
 set background=dark					" dark background
