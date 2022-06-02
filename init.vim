@@ -11,8 +11,6 @@ set background=dark					" dark background
 set nocompatible
 
 call plug#begin()
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'vimwiki/vimwiki'					" vimwiki 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }	" go for vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'} 	" coc
