@@ -3,22 +3,30 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
---[[ TO UPDATE PLUGINS 
+--[[ 
+	=== TO UPDATE PLUGINS ===
 	:PackerCompile, :PackerClean, :PackerInstall, :PackerUpdate, :PackerSync, :PackerLoad 
 --]]
 
 return require('packer').startup(
 function()
--- [ Packer ] can manage itself
-  use 'wbthomason/packer.nvim'
 
--- [ Lua Line ]
-  use {
+--[[ 
+	=== Packer === 
+	can manage itself
+--]]  
+use 'wbthomason/packer.nvim'
+
+--[[ 
+	=== Lua Line ===
+--]]  
+use {
   	'nvim-lualine/lualine.nvim',
   	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
---[[ Telescope 
+--[[ 
+	=== Telescope === 
 	brew install rg
 	brew install ripgrep
 --]]

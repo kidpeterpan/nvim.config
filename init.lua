@@ -3,13 +3,15 @@ require('plugins')
 
 local api = vim.api
 
--- key mapping
--- nvim_set_keymap([MODE],[KEY],[COMMAND],[OPTION])
--- [MODE]
--- 	n - normal mode
--- [KEY]
--- 	<Leader> - '\' key
--- 	<CR> - 'Return' key
+--[[ 
+	=== Key Mapping === 
+	vim.api.nvim_set_keymap([MODE],[KEY],[COMMAND],[OPTION])
+	[MODE]
+		n - normal mode
+	[KEY]
+		<Leader> - '\' key
+ 		<CR> - 'Return' key
+--]] 	
 api.nvim_set_keymap('n','<Leader>gr',':GoRun<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>ff',':lua require("telescope.builtin").find_files()<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>fg',':lua require("telescope.builtin").live_grep()<CR>',{ noremap = true, silent = true })
