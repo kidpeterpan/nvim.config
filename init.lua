@@ -1,3 +1,18 @@
+local api = vim.api
+
+-- key mapping
+-- nvim_set_keymap([MODE],[KEY],[COMMAND],[OPTION])
+-- [MODE]
+-- 	n - normal mode
+-- [KEY]
+-- 	<Leader> - '\' key
+-- 	<CR> - 'Return' key
+api.nvim_set_keymap('n','<Leader>gr',':GoRun<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','<Leader>ff',':lua require("telescope.builtin").find_files()<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','<Leader>fg',':lua require("telescope.builtin").live_grep()<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','<Leader>fb',':lua require("telescope.builtin").buffers()<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','<Leader>fh',':lua require("telescope.builtin").help_tags()<CR>',{ noremap = true, silent = true })
+
 vim.cmd([[
 
 call plug#begin()
@@ -43,14 +58,5 @@ set nocompatible
 
 let g:vimwiki_list = [{'path': '/path/to/my/wiki/',
 	\ 'syntax': 'markdown', 'ext': '.md'}]
-
-" Key Mapping
-" Telescope
-" Using Lua functions
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-nnoremap <leader>gr <cmd>lua require('vim_go').go_run()<cr>
 
 ]])

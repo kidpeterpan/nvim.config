@@ -1,6 +1,7 @@
 # nvim.config
 
 - updated for neovim `0.7.0`
-- colorscheme grubox
+- lua config
+- colorscheme gruvbox
 - Golang setup
 - Telescope
