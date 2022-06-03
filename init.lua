@@ -1,5 +1,6 @@
 -- packer.nvim is required : https://github.com/wbthomason/packer.nvim
 require('plugins')
+require('lualine_config')
 
 local api = vim.api
 
