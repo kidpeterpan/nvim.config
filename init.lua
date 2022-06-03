@@ -1,3 +1,6 @@
+-- packer.nvim is required : https://github.com/wbthomason/packer.nvim
+require('plugins')
+
 local api = vim.api
 
 -- key mapping
@@ -28,15 +31,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }	" go for vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'} 	" coc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Telescope 						"
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" brew install fd
-" brew install ripgrep
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vimwiki 						"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vimwiki/vimwiki'					" vimwiki 
@@ -54,7 +48,6 @@ set clipboard=unnamedplus   				" using system clipboard
 set ignorecase						" case insensitive
 set background=dark					" dark background
 set nocompatible
-
 
 let g:vimwiki_list = [{'path': '/path/to/my/wiki/',
 	\ 'syntax': 'markdown', 'ext': '.md'}]
