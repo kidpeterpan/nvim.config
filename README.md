@@ -16,4 +16,5 @@
 - install [Packer.nvim](https://github.com/wbthomason/packer.nvim#quickstart)
 - install [Golang](https://go.dev/doc/install)
 - install [Node Js](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
+- install [Coc](https://github.com/neoclide/coc.nvim)
 - open `nvim` and run `:PackerSync`
