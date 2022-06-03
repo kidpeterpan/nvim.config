@@ -37,6 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} 	" coc
 " Vimwiki 						"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vimwiki/vimwiki'					" vimwiki 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
