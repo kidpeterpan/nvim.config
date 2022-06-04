@@ -18,6 +18,11 @@ api.nvim_set_keymap('n','<Leader>ff',':lua require("telescope.builtin").find_fil
 api.nvim_set_keymap('n','<Leader>fg',':lua require("telescope.builtin").live_grep()<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>fb',':lua require("telescope.builtin").buffers()<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>fh',':lua require("telescope.builtin").help_tags()<CR>',{ noremap = true, silent = true })
+-- copy and past system clipboard
+api.nvim_set_keymap('n','<C-c>','"*y :let @+=@*<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('v','<C-c>','"*y :let @+=@*<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','<C-v>','"+p',{ noremap = true, silent = true })
+api.nvim_set_keymap('v','<C-v>','"+p',{ noremap = true, silent = true })
 
 vim.cmd([[
 
