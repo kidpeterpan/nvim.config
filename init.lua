@@ -15,6 +15,7 @@ local api = vim.api
  		<CR> - 'Return' key
 --]] 	
 api.nvim_set_keymap('n','<Leader>gr',':GoRun<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','gc',':GoCallers<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>ff',':lua require("telescope.builtin").find_files()<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>fg',':lua require("telescope.builtin").live_grep()<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<Leader>fb',':lua require("telescope.builtin").buffers()<CR>',{ noremap = true, silent = true })
