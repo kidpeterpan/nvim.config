@@ -1,6 +1,7 @@
 -- packer.nvim is required : https://github.com/wbthomason/packer.nvim
 require('plugins')
 require('lualine_config')
+require('nvimtree_config')
 
 local api = vim.api
 
@@ -10,7 +11,7 @@ local api = vim.api
 	[MODE]
 		n - normal mode
 	[KEY]
-		<Leader> - '\' key
+	<Leader> - '\' key
  		<CR> - 'Return' key
 --]] 	
 api.nvim_set_keymap('n','<Leader>gr',':GoRun<CR>',{ noremap = true, silent = true })
