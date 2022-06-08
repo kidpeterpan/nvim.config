@@ -3,7 +3,9 @@
 -- setup with all defaults
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
 -- nested options are documented by accessing them with `.` (eg: `:help nvim-tree.view.mappings.list`).
-require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
+
+-- BEGIN_DEFAULT_OPTS
+require'nvim-tree'.setup { 
   auto_reload_on_write = true,
   create_in_closed_folder = false,
   disable_netrw = false,
@@ -35,59 +37,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       },
     },
   },
-  renderer = {
-    add_trailing = false,
-    group_empty = false,
-    highlight_git = false,
-    full_name = false,
-    highlight_opened_files = "none",
-    root_folder_modifier = ":~",
-    indent_markers = {
-      enable = false,
-      icons = {
-        corner = "└ ",
-        edge = "│ ",
-        item = "│ ",
-        none = "  ",
-      },
-    },
-    icons = {
-      webdev_colors = true,
-      git_placement = "before",
-      padding = " ",
-      symlink_arrow = " ➛ ",
-      show = {
-        file = true,
-        folder = true,
-        folder_arrow = true,
-        git = true,
-      },
-      glyphs = {
-        default = "",
-        symlink = "",
-        folder = {
-          arrow_closed = "",
-          arrow_open = "",
-          default = "",
-          open = "",
-          empty = "",
-          empty_open = "",
-          symlink = "",
-          symlink_open = "",
-        },
-        git = {
-          unstaged = "✗",
-          staged = "✓",
-          unmerged = "",
-          renamed = "➜",
-          untracked = "★",
-          deleted = "",
-          ignored = "◌",
-        },
-      },
-    },
-    special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
-  },
   hijack_directories = {
     enable = true,
     auto_open = true,
@@ -116,10 +65,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     dotfiles = false,
     custom = {},
     exclude = {},
-  },
-  filesystem_watchers = {
-    enable = false,
-    interval = 100,
   },
   git = {
     enable = true,
@@ -159,18 +104,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   live_filter = {
     prefix = "[FILTER]: ",
     always_show_folders = true,
-  },
-  log = {
-    enable = false,
-    truncate = false,
-    types = {
-      all = false,
-      config = false,
-      copy_paste = false,
-      diagnostics = false,
-      git = false,
-      profile = false,
-      watcher = false,
-    },
-  },
-} -- END_DEFAULT_OPTS
+  }
+} 
+-- END_DEFAULT_OPTS
