@@ -29,6 +29,7 @@ api.nvim_set_keymap('v','<C-v>','"+p',{ noremap = true, silent = true })
 vim.cmd([[
 
 call plug#begin()
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git    						"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,6 +46,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} 	" coc
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vimwiki/vimwiki'					" vimwiki 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 colorscheme gruvbox
