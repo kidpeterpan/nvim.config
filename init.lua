@@ -45,12 +45,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} 	" coc
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vimwiki/vimwiki'					" vimwiki 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Dev Icon						"
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'ryanoasis/vim-devicons'
-
 call plug#end()
 
 colorscheme gruvbox
