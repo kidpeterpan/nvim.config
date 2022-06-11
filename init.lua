@@ -25,6 +25,9 @@ api.nvim_set_keymap('n','<C-c>','"*y :let @+=@*<CR>',{ noremap = true, silent = 
 api.nvim_set_keymap('v','<C-c>','"*y :let @+=@*<CR>',{ noremap = true, silent = true })
 api.nvim_set_keymap('n','<C-v>','"+p',{ noremap = true, silent = true })
 api.nvim_set_keymap('v','<C-v>','"+p',{ noremap = true, silent = true })
+-- NvimTreeToggle
+api.nvim_set_keymap('n','<Leader>ntt',':NvimTreeToggle<CR>',{ noremap = true, silent = true })
+api.nvim_set_keymap('n','<Leader>ntf',':NvimTreeFindFile<CR>',{ noremap = true, silent = true })
 
 vim.cmd([[
 
